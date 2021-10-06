@@ -17,14 +17,24 @@
 a{
   text-decoration: none;
 }
+h2{
+  color: #091e40;
+  font-size: 43px;
+  font-weight: 200;
+  line-height: 1.5;
+}
 
 header {
   background-color: #fff;
   margin: 45px 141px 0px;
 }
-section{
-  height: 1080px;
+
+hr{
+  border: none;
+  border-top: 4px solid #4497f3;
 }
+
+
 
 .logo{
   padding-top: 0;
@@ -33,7 +43,9 @@ section{
   width:40%;
 }
 
-
+.menu{
+  padding-right: 0;
+}
 .menu ul {
   list-style-type: none;
   margin: 0;
@@ -46,6 +58,9 @@ section{
   margin-bottom: 7px;
   display:inline;
   font-size: 16px;
+}
+.menu li:last-child {
+  padding-right: 0px;
 }
 
 .menu a{
@@ -74,7 +89,7 @@ span.signinLink{
 
 .home h1{
   color: #091e40;
-  font-size: 60px;
+  font-size: 54px;
   margin-top: 150px;
 }
 .mainText p{
@@ -102,9 +117,256 @@ span.signinLink{
   padding-right: 0;
   }
 .homeImg img{
-width: 788px;
+width: 741px;
 
 }
+
+.home2{
+  margin-top: 100px;
+  margin-right: 141px;
+}
+
+
+
+.home2 hr{
+  width:15%;
+  margin-left: 0px;
+}
+
+.amazing p, 
+.video p,
+.travel p{
+  margin-top: 36px;
+  color:grey;
+  
+}
+
+.flex-container-home {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 826px;
+  background-color: #fff;
+}
+
+.flex-container-home > div {
+  width: 50%;
+}
+.flex-container-home > div.amazing{
+  height: 923px;
+}
+
+
+
+.nepalImg img{
+  position: absolute;
+  width: 533px;
+  z-index: 999;
+  top: 1216.33px;left: 86px;
+}
+.price p{
+  background-color:#4497f3;
+  width: 32px;
+  margin-top: 177px;
+  margin-left: 567px;
+}
+.price,
+.napalName,
+.stars,
+.tour{
+  position: absolute;
+  z-index: 1000;
+}
+.price p,
+.napalName p,
+.stars p,
+.tour p{
+  color:#fff;
+  font-size: 11px;
+}
+.napalName p{
+  margin-top: 553px;
+  margin-left: 94px;
+}
+.tour p{
+  margin-top: 177px;
+  margin-left: 93px;
+}
+
+.stars img{
+  width: 15px;
+  margin-top: 550px;margin-left: 526px;
+}
+.cloud img{
+  position: absolute;
+  z-index: 950;
+  right: 0px;
+  margin-top: -31px;
+  top: 903.333px;
+}
+
+.indonesia img{
+  position: absolute;
+  z-index: 700;
+  width:623px;
+  margin-top: 94px;
+  left: 107px;
+}
+
+.indonesia p{
+  color:white;
+  font-size: 11px;
+  margin-bottom: 0px;
+  margin-left: 587px;
+  margin-top: 486px;
+}
+.indonesiaName{
+  position: absolute;
+  z-index: 702; 
+}
+.ocean img{
+  position: absolute;
+  z-index: auto;
+  width:250px;
+
+}
+.ocean p{
+  color:white;
+  font-size: 11px;
+  margin-bottom: 0px;
+  margin-top: 633px;
+}
+.oceanName{
+  position: absolute;
+  z-index: 2; 
+}
+
+.amazing{
+padding-left: 145px;
+display:flex;
+align-items: center;
+}
+
+
+
+.amazing h2{
+  margin-top: 0px;
+}
+.video h2,
+.video p,
+.travel h2,
+.travel p{
+  text-align: center;
+}
+
+.video hr,
+.travel hr{
+  width: 7.5%
+}
+.video p, 
+.travel p{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.videoBig{
+  background-image: url(../travel/img/maldives.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+
+.flex-container-video{
+	display: flex;
+	max-width: 1416px; /* макс ширина блока */
+}
+.preview{
+  text-align: right;
+}
+.videoBig, .videoRight{
+	flex-grow:1; /* растягивание элементов */
+	display: flex; 
+  /* justify-content: center;  */
+  /* align-items: center;  */
+}
+
+.videoBig{
+	min-height:300px; /* высота основного блока */
+}
+
+.videoSmall{
+
+	flex-basis:420px; /* ширина 150 */
+	flex-shrink:0; /* Убираем уменьшение = 150 */				   
+	
+	display: flex;
+	flex-direction: column;
+}
+
+.videoRight{
+	flex-basis:50%;
+	min-height:150px;
+	
+  margin-bottom:10px;
+}
+.videoRight:last-child{ 
+margin-bottom:0px;
+}
+
+.previewDesc p{
+text-align: left;
+margin-left: 21px;
+margin-right: 0px;
+}
+.previewDesc p span{
+  color: #091e40;
+  }
+
+  .travelPhoto-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    /* width: 55%; */
+  }
+  .travelPhoto-item {
+    flex: 0 0 auto;
+    margin: 5px;
+    order: 2;
+  }
+
+  .travelPhoto-item img{
+    width: 135%;
+  }
+
+
+
+
+/* меньше 600px */
+@media screen and (max-width: 600px) {
+	.flex{ flex-wrap: wrap; } /* для переноса */
+	
+	.videoSmall{ flex-direction:row; flex-basis:100%; }
+	
+	.videoRight{ margin-left:0; margin-top:10px; }
+	.videoRight:first-child{ margin-bottom:0; margin-right:10px; }
+}
+
+/* меньше 450px */
+@media screen and (max-width: 450px) {
+	.videoSmall{ flex-wrap: wrap; } /* разрешаем перенос */
+	.videoRight{ flex-basis:100%; } /* на всю ширину */
+	.videoRight:first-child{ margin-right:0; }
+}
+
+
+
+
+
+
+
 
 
 
