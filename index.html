@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Travel</title>
 </head>
@@ -48,98 +53,55 @@
     </section>
     <section class="home2">
 
-      <div class="flex-container-home">
-        <div>
-          <div class="nepal">
-            <div class="nepalImg"><img src="img/Nepal.png" alt="Nepal"></div>
-            <div class="cloud"><img src="img/234.png" alt="Nepal"></div>
-            <div class="price">
-              <p> $640</p>
-            </div>
-            <div class="napalName">
-              <p>Kathmandu, Nepal</p>
-            </div>
-            <div class="stars"><img src="img/star.png" alt=""></div>
-            <div class="tour">
-              <p>7 days tour</p>
-            </div>
-          </div>
 
+      <div class="container-home">
 
-
-          <div class="indonesia">
-            <div><img src="img/indonesia.png" alt="Indonesia"></div>
-            <div class="indonesiaName">
-              <p>Raja Ampat, Indonesia</p>
-            </div>
-          </div>
-
-          <div class="ocean">
-            <div><img src="img/ocean.png" alt=""></div>
-            <div class="oceanName">
-              <p>Kuramathi, Maldives</p>
-            </div>
-
-          </div>
+        <div class="ocean">
+          <div><img src="img/ocean.png" alt=""></div>
         </div>
+  
+        <div class="nepal">
+          <div class="nepalImg"><img src="img/Nepal.png" alt="Nepal"></div>
+        </div>
+    
+        <div class="indonesia">
+          <div><img src="img/indonesia.png" alt="Indonesia"></div>
+        </div>
+    
 
-
+    
         <div class="amazing">
-          <div>
+
             <h2>Amazing places to enjoy <br>your travel</h2>
             <hr>
-            <div>
+
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iusto itaque laboriosam? Voluptates
                 quasi odit quas. Dolore atque vero optio ex cum enim? Sed nobis cum quas? Alias, facere tempora!</p>
-            </div>
-            <div><button class="homeButton"><a href="#">Explore</a></button></div>
+
+            <button class="homeButton"><a href="#">Explore</a></button>
           </div>
         </div>
       </div>
-
     </section>
 
     <section class="video" id="video">
       <h2>Featured videos</h2>
       <hr>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iusto itaque laboriosam? Voluptates quasi
-        odit quas. Dolore atque vero optio ex cum enim? Sed nobis cum quas? Alias, facere tempora! Lorem ipsum dolorsit, amet consectetur adipisicingelit. Dolore atque vero optio ex cum enim? Sed nobis cum quas? Alias, facere tempora! </p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iusto itaque laboriosam? Voluptates quasi odit quas. Dolore atque vero optio ex cum enim? Sed nobis cum quas? Alias, facere tempora! Lorem ipsum dolorsit, amet consectetur adipisicingelit. Dolore atque vero optio ex cum enim? Sed nobis cum quas? Alias, facere tempora! </p>
 
-      <div class="flex-container-video">
-
-        <!-- container 1 -->
-        <div class="videoBig"></div>
-
-
-        <div class="videoSmall">
-
-          <div class="videoRight">
-            <div class="preview"><img src="img/small1.jpg" alt=""></div>
-            <div class="previewDesc"><p><span>When go to Maldives</span><br>3.55
-            </p></div>
-          </div>
-          <div class="videoRight">
-            <div class="preview"><img src="img/small2.jpg" alt=""></div>
-            <div class="previewDesc"><p><span>Tanzania's deadly pink lake</span><br>5.24
-            </p></div>
-          </div>
-          <div class="videoRight">
-            <div class="preview"><img src="img/small3.jpg" alt=""></div>
-            <div class="previewDesc"><p><span>Top things to do in Kathmandu</span><br>6.12
-            </p></div>
-          </div>
-          <div class="videoRight">
-            <div class="preview"><img src="img/small4.jpg" alt=""></div>
-            <div class="previewDesc"><p><span>Exploring China's creative capital</span><br>04.33
-            </p></div>
-          </div>
-          <div class="videoRight">
-            <div class="preview"><img src="img/small6.jpg" alt=""></div>
-            <div class="previewDesc"><p><span>Wynwood walls</span><br>3.55
-            </p></div>
-          </div>
+      <div class="row">
+        <div class="col-8 col-s-12 bigVideo">
+          <img src="img/video_mald_big.jpg" alt="">
         </div>
-
+        <div class="col-4 col-s-12 smallVideo">
+          <ul>
+            <li><img src="img/small11.jpg" alt=""><div><h3>When go to <br>Maldives</h3><p>03.55</p></div></li>
+            <li><img src="img/small22.jpg" alt=""><div><h3>Tanzania's deadly <br>pink lake</h3><p>05.24</p></div></li>
+            <li><img src="img/small33.jpg" alt=""><div><h3>Top things to do in <br>Kathmandu</h3><p>06.12</p></div></li>
+            <li><img src="img/small44.jpg" alt=""><div><h3>Exploring China's <br>creative capital</h3><p>04.33</p></div></li>
+            <li><img src="img/small66.jpg" alt=""><div><h3>Wynwood walls</h3><p>05.12</p></div></li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -150,23 +112,60 @@
         odit quas. Dolore atque vero optio ex cum enim? Sed nobis cum quas? Alias, facere tempora! Lorem ipsum dolorsit, amet consectetur adipisicingelit. Dolore atque vero optio ex cum enim? Sed nobis cum quas? Alias, facere tempora! </p>
 
 
-      <div class="travelPhoto-container">
-        <div class="travelPhoto-item"><img src="img/travel1small.jpg" alt=""></div>
-        <div class="travelPhoto-item"><img src="img/travel2small.jpg" alt=""></div>
-        <div class="travelPhoto-item"><img src="img/travel3small.jpg" alt=""></div>
-        <div class="travelPhoto-item"><img src="img/travel4small.jpg" alt=""></div>
-        <div class="travelPhoto-item"><img src="img/travel5small.jpg" alt=""></div>
-      </div>
+        <div class="container-travel">
+
+          <div class="travel-first">
+            <div><img src="img/travel11.jpg" alt=""></div>
+          </div>
+    
+          <div class="travel-second">
+            <div><img src="img/travel22.jpg" alt=""></div>
+          </div>
+      
+          <div class="travel-third">
+            <div><img src="img/travel33.jpg" alt=""></div>
+          </div>
+      
+          <div class="travel-fourth">
+            <div><img src="img/travel44.jpg" alt=""></div>
+          </div>
+          
+
+          <div class="travel-five">
+            <div><img src="img/travel55.jpg" alt=""></div>
+          </div>
+        </div>
+    </section>
+
+    <section class="experiences">
 
       <h2>Traveller's experiences</h2>
       <hr>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iusto itaque laboriosam? Voluptates quasi
-        odit quas. Dolore atque vero optio ex cum enim? Sed nobis cum quas? Alias, facere tempora! Lorem ipsum dolorsit, amet consectetur adipisicingelit. Dolore atque vero optio ex cum enim? Sed nobis cum quas? Alias, facere tempora! </p>
-      
-      <div class="traveller-container">
-        
-      </div>
+      <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iusto itaque laboriosam? Voluptates quasi odit quas. Dolore atque vero optio ex cum enim? Sed nobis cum quas? Alias, facere tempora! Lorem ipsum dolorsit, amet consectetur adipisicingelit. Dolore atque vero optio ex cum enim? Sed nobis cum quas? Alias, facere tempora!"</p>
+      <div class="container-experiences">
 
+        <div class="experiences-first">
+          <img src="img/left'.png" alt="">
+        </div>
+  
+        <div class="experiences-second">
+          <div><img src="img/Don.jpg" alt=""></div>
+          <h3>Donquixote Law</h3>
+          <p>Traveller</p>
+        </div>
+    
+        <div class="experiences-third">
+          <img src="img/right.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="booking">
+      <div class="contactForm">
+        <div class="row">
+          
+        </div>
+      </div>
 
     </section>
 

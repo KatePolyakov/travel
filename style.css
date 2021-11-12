@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .row::after {
@@ -19,9 +19,7 @@ a{
 }
 h2{
   color: #091e40;
-  font-size: 43px;
-  font-weight: 200;
-  line-height: 1.5;
+  font-size: 34px;
 }
 
 header {
@@ -88,12 +86,13 @@ span.signinLink{
 }
 
 .home h1{
+  font-family: 'Nunito Sans', sans-serif;
   color: #091e40;
   font-size: 54px;
   margin-top: 150px;
 }
 .mainText p{
-  color:grey;
+  color:#81858e;
   font-size: 16px;
   line-height: 1.8;
 }
@@ -137,190 +136,193 @@ width: 741px;
 .video p,
 .travel p{
   margin-top: 36px;
-  color:grey;
+  color:#81858e;
+  line-height: 1.8;
+}
+
+
+.container-home {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.container-home div:nth-child(1) {
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-items: baseline;
+  justify-content:  space-around;
+  align-self: flex-start;
   
 }
 
-.flex-container-home {
+.container-home div:nth-child(2) {
   display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  height: 826px;
-  background-color: #fff;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-items: baseline;
+  justify-content: space-around;
+  align-self: flex-start;
+  
 }
 
-.flex-container-home > div {
-  width: 50%;
-}
-.flex-container-home > div.amazing{
-  height: 923px;
-}
-
-
-
-.nepalImg img{
-  position: absolute;
-  width: 533px;
-  z-index: 999;
-  top: 1216.33px;left: 86px;
-}
-.price p{
-  background-color:#4497f3;
-  width: 32px;
-  margin-top: 177px;
-  margin-left: 567px;
-}
-.price,
-.napalName,
-.stars,
-.tour{
-  position: absolute;
-  z-index: 1000;
-}
-.price p,
-.napalName p,
-.stars p,
-.tour p{
-  color:#fff;
-  font-size: 11px;
-}
-.napalName p{
-  margin-top: 553px;
-  margin-left: 94px;
-}
-.tour p{
-  margin-top: 177px;
-  margin-left: 93px;
+.container-home div:nth-child(3) {
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-items: baseline;
+  justify-content: space-around;
+  align-self: flex-start;
+  
 }
 
-.stars img{
-  width: 15px;
-  margin-top: 550px;margin-left: 526px;
+.ocean {
+  margin: 70px 20px 0px 0px;
 }
-.cloud img{
-  position: absolute;
-  z-index: 950;
-  right: 0px;
-  margin-top: -31px;
-  top: 903.333px;
+.nepal {
+  margin: 0px 20px;
 }
-
-.indonesia img{
-  position: absolute;
-  z-index: 700;
-  width:623px;
-  margin-top: 94px;
-  left: 107px;
+.indonesia {
+  margin: 70px 20px 0px 20px;
+}
+ .amazing {
+  margin: 70px 0px 0px 53px;
 }
 
-.indonesia p{
-  color:white;
-  font-size: 11px;
+.amazing p{
   margin-bottom: 0px;
-  margin-left: 587px;
-  margin-top: 486px;
-}
-.indonesiaName{
-  position: absolute;
-  z-index: 702; 
-}
-.ocean img{
-  position: absolute;
-  z-index: auto;
-  width:250px;
-
-}
-.ocean p{
-  color:white;
-  font-size: 11px;
-  margin-bottom: 0px;
-  margin-top: 633px;
-}
-.oceanName{
-  position: absolute;
-  z-index: 2; 
 }
 
-.amazing{
-padding-left: 145px;
-display:flex;
-align-items: center;
-}
-
-
-
-.amazing h2{
+ .amazing h2{
   margin-top: 0px;
 }
+
 .video h2,
 .video p,
 .travel h2,
-.travel p{
+.travel p,
+.experiences h2,
+.experiences p{
   text-align: center;
 }
 
 .video hr,
-.travel hr{
+.travel hr,
+.experiences hr{
   width: 7.5%
 }
 .video p, 
-.travel p{
+.travel p,
+.experiences p{
   margin-left: 15%;
   margin-right: 15%;
 }
 
-.videoBig{
-  background-image: url(../travel/img/maldives.png);
-  background-repeat:no-repeat;
-  background-size:cover;
+.video{
+  margin: 175px 141px;
+}
+.smallVideo{
+  overflow: auto;
+  height: 500px;
+}
+.smallVideo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0px;
 }
 
-
-.flex-container-video{
-	display: flex;
-	max-width: 1416px; /* макс ширина блока */
+.smallVideo li {
+  display: block ruby;
+  margin: 0px 0px 10px 0px;
 }
-.preview{
-  text-align: right;
+.smallVideo li:hover{
+  background-color: rgb(152, 152, 152, 0.2);
 }
-.videoBig, .videoRight{
-	flex-grow:1; /* растягивание элементов */
-	display: flex; 
-  /* justify-content: center;  */
-  /* align-items: center;  */
+.smallVideo img{
+  margin: 7.5px 15px;
+  
 }
 
-.videoBig{
-	min-height:300px; /* высота основного блока */
+.smallVideo h3,
+.smallVideo p{
+  margin: 0px;
 }
 
-.videoSmall{
-
-	flex-basis:420px; /* ширина 150 */
-	flex-shrink:0; /* Убираем уменьшение = 150 */				   
-	
-	display: flex;
-	flex-direction: column;
+.smallVideo p{
+  text-align: left;
 }
 
-.videoRight{
-	flex-basis:50%;
-	min-height:150px;
-	
-  margin-bottom:10px;
-}
-.videoRight:last-child{ 
-margin-bottom:0px;
+.container-travel {
+  display: flex;
+  width: 100%;
+  
+  
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 150px;
 }
 
-.previewDesc p{
-text-align: left;
-margin-left: 21px;
-margin-right: 0px;
+.container-travel div:nth-child(1) {
+  display: flex;
+  flex-basis: auto;
+  /* flex-grow: 1; */
+  flex-shrink: 1;
+  align-items: baseline;
+  justify-content:  space-around;
+  align-self: flex-start;
+  
 }
-.previewDesc p span{
-  color: #091e40;
-  }
+
+.container-travel div:nth-child(2) {
+  display: flex;
+  flex-basis: auto;
+  /* flex-grow: 1; */
+  flex-shrink: 1;
+  align-items: baseline;
+  justify-content: space-around;
+  align-self: flex-start;
+  
+}
+
+.container-travel div:nth-child(3) {
+  display: flex;
+  flex-basis: auto;
+  /* flex-grow: 1; */
+  flex-shrink: 1;
+  align-items: baseline;
+  justify-content: space-around;
+  align-self: flex-start;
+  
+}
+.container-travel div:nth-child(4) {
+  display: flex;
+  flex-basis: auto;
+  /* flex-grow: 1; */
+  flex-shrink: 1;
+  align-items: baseline;
+  justify-content: space-around;
+  align-self: flex-start;
+  
+}
+.container-travel div:nth-child(5) {
+  display: flex;
+  flex-basis: auto;
+  /* flex-grow: 1; */
+  flex-shrink: 1;
+  align-items: baseline;
+  justify-content: space-around;
+  align-self: flex-start;
+  
+}
 
   .travelPhoto-container {
     display: flex;
@@ -331,17 +333,70 @@ margin-right: 0px;
     align-content: space-around;
     /* width: 55%; */
   }
-  .travelPhoto-item {
-    flex: 0 0 auto;
-    margin: 5px;
-    order: 2;
+
+  .travel-third img{
+    margin-top: -60px;
   }
 
-  .travelPhoto-item img{
-    width: 135%;
+  .experiences{
+    margin-top: 150px;
+  }
+  .experiences p{
+    margin-top: 36px;
+    line-height: 1.8;
+  }
+  .container-experiences {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .container-experiences div:nth-child(1) {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: baseline;
+    justify-content:  space-around;
+    align-self:center;
+    
+  }
+  
+  .container-experiences div:nth-child(2) {
+    /* display: flex; */
+    flex-basis: auto;
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+    align-items: baseline;
+    justify-content: space-around;
+    align-self: flex-start;
+  }
+  
+  .container-experiences div:nth-child(3) {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: baseline;
+    justify-content: space-around;
+    align-self: center;
+    
   }
 
+  .experiences-second p{
+    margin-top: 0;
+  }
+  .experiences-second h3{
+    margin-bottom: 0;
+  }
 
+  .booking{
+    margin-top: 150px;
+    background: url('./img/booking.png');
+    background-size: cover;
+    height: 100vh;
+  }
 
 
 /* меньше 600px */
