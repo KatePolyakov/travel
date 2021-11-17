@@ -248,7 +248,6 @@ width: 741px;
 }
 .smallVideo img{
   margin: 7.5px 15px;
-  
 }
 
 .smallVideo h3,
@@ -263,8 +262,6 @@ width: 741px;
 .container-travel {
   display: flex;
   width: 100%;
-  
-  
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -274,12 +271,10 @@ width: 741px;
 .container-travel div:nth-child(1) {
   display: flex;
   flex-basis: auto;
-  /* flex-grow: 1; */
   flex-shrink: 1;
   align-items: baseline;
   justify-content:  space-around;
   align-self: flex-start;
-  
 }
 
 .container-travel div:nth-child(2) {
@@ -290,7 +285,6 @@ width: 741px;
   align-items: baseline;
   justify-content: space-around;
   align-self: flex-start;
-  
 }
 
 .container-travel div:nth-child(3) {
@@ -301,7 +295,6 @@ width: 741px;
   align-items: baseline;
   justify-content: space-around;
   align-self: flex-start;
-  
 }
 .container-travel div:nth-child(4) {
   display: flex;
@@ -311,7 +304,6 @@ width: 741px;
   align-items: baseline;
   justify-content: space-around;
   align-self: flex-start;
-  
 }
 .container-travel div:nth-child(5) {
   display: flex;
@@ -321,7 +313,6 @@ width: 741px;
   align-items: baseline;
   justify-content: space-around;
   align-self: flex-start;
-  
 }
 
   .travelPhoto-container {
@@ -331,7 +322,6 @@ width: 741px;
     justify-content: space-between;
     align-items: center;
     align-content: space-around;
-    /* width: 55%; */
   }
 
   .travel-third img{
@@ -360,7 +350,6 @@ width: 741px;
     align-items: baseline;
     justify-content:  space-around;
     align-self:center;
-    
   }
   
   .container-experiences div:nth-child(2) {
@@ -381,7 +370,6 @@ width: 741px;
     align-items: baseline;
     justify-content: space-around;
     align-self: center;
-    
   }
 
   .experiences-second p{
@@ -395,69 +383,127 @@ width: 741px;
     margin-top: 150px;
     background: url('./img/booking.png');
     background-size: cover;
-    height: 100vh;
+    height: 100vh; 
   }
-
-
-/* меньше 600px */
-@media screen and (max-width: 600px) {
-	.flex{ flex-wrap: wrap; } /* для переноса */
-	
-	.videoSmall{ flex-direction:row; flex-basis:100%; }
-	
-	.videoRight{ margin-left:0; margin-top:10px; }
-	.videoRight:first-child{ margin-bottom:0; margin-right:10px; }
+  .bookingGrid{
+    display: grid;
+    grid-template-areas: "a a a a"
+                        "b b b b"
+                        "c d e f";
+    padding: 234px 150px;
+  }
+  .whiteText{
+    grid-area: a;
+    text-align: center;
+  }
+  .bigWhiteText{
+    grid-area: b;
+    text-align: center;
+  }
+  .whiteText h3{
+    color:#fff;
+    font-size: 26px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 0px;
+  }
+  .bigWhiteText h1{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 45.86px;
+  }
+  .contactFormOne{
+    grid-area: c;
+  }
+  .contactFormTwo{
+    grid-area: d;
+  }
+  .contactFormThree{
+    grid-area: e;
+  }
+  .contactFormFour{
+    grid-area: f;
+  }
+  .contactFormFour button{
+    margin: 0;
+    padding: 16.5px 69px;
+  }
+  .survey{
+    background: rgba(255, 255, 255, 0.2);
+    border:0;
+    color:#fff;
+  }
+  select.survey:focus {
+    background-color: #4497f3; }
+  
+  #country {
+      padding: 18px 35.6335px;
+  }
+  #package{
+    padding: 18px 49.425px;
+  }
+  #start {
+    padding: 18px 58.1px;
+}
+.footerOne{
+  display: grid;
+  grid-template-areas: "h i j k l m n"
+                      "o o o o o o o";
+  margin: 82px 414px 25px 484px;
+  font-size: 14px;
+  grid-row-gap: 30px;
+  font-family: 'Nunito', sans-serif;
+}
+.ho{
+  grid-area: h;
+}
+.vi{
+  grid-area: i;
+}
+.des{
+  grid-area: j;
+}
+.book{
+  grid-area: k;
+}
+.con{
+  grid-area: l;
+}
+.pri{
+  grid-area: m;
+}
+.pol{
+  grid-area: n;
+}
+.copy{
+  grid-area: o;
+  text-align: center;
 }
 
-/* меньше 450px */
-@media screen and (max-width: 450px) {
-	.videoSmall{ flex-wrap: wrap; } /* разрешаем перенос */
-	.videoRight{ flex-basis:100%; } /* на всю ширину */
-	.videoRight:first-child{ margin-right:0; }
+.footerOne span{
+  color:#81858e;
+}
+.footerOne a{
+  color:black;
+}
+.footerOne a:hover{
+  color: #4497f3;
+}
+.footerTwo{
+  display: grid;
+  grid-template-areas: "a b c d";
+  padding: 0 582px 0 652px;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
+.youtube{
+  grid-area: a;
 }
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
+.facebook{
+  grid-area: b;
 }
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+.twitter{
+  grid-area: c;
+}
+.mail{
+  grid-area: d; 
 }

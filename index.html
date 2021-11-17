@@ -25,7 +25,7 @@
           <li><a href="#home"><span class="homeLink">Home</span></a></li>
           <li><a href="#video">Video</a></li>
           <li><a href="#travel">Destinations</a></li>
-          <li><a href="#">Booking</a></li>
+          <li><a href="#booking">Booking</a></li>
           <li><a href="#"><span class="signinLink">Sign in</span></a></li>
         </ul>
       </div>
@@ -160,18 +160,64 @@
       </div>
     </section>
 
-    <section class="booking">
-      <div class="contactForm">
-        <div class="row">
-          
+    <section class="booking" id="booking">
+      <div class="bookingGrid">
+        <div class="whiteText"><h3>WE WILL SEE YOU</h3></div>
+        <div class="bigWhiteText"><h1>Enjoy 30% Off On The First Trip</h1></div>
+        <div class="contactFormOne forms">
+          <select class="survey" id="country" name="country"><br>
+            <option value="">Destination</option>
+            <option class="survey" value="alberta">Alberta</option>
+            <option class="survey" value="BC">British Columbia</option>
+            <option class="survey" value="ontario">Ontario</option>
+            <option class="survey" value="saskatchewan">Saskatchewan</option>
+            <option class="survey" value="yukon">Yukon</option>
+            <option class="survey" value="nt">NorthWest Territories</option>
+          </select>
+        </div>
+        <div class="contactFormTwo forms">
+          <select class="survey" id="package" name="package"><br>
+            <option class="survey" value="">Package</option>
+           <option class="survey" value="bb">BB</option>
+            <option class="survey" value="ai">All Inclusive</option>
+            <option class="survey" value="aip">All Inclusive Plus</option>
+            <option class="survey" value="ho">Hotel Only</option>
+
+          </select>
+       </div>
+        <div class="contactFormThree forms">
+          <input class="survey" type="date" id="start" name="trip-start"
+          value="0000-00-00"
+          min="2022-01-01" max="2025-12-31">
+        </div>
+        <div class="contactFormFour">
+         <button class="homeButton"><a href="#">BOOK NOW</a></button>
         </div>
       </div>
-
     </section>
-
-
   </main>
-  <footer></footer>
+  <footer>
+    <div class="footerOne">
+      <div class="ho"><a href="#home">Home</a></div>
+      <div class="vi"><a href="#video">Video</a></div>
+      <div class="des"><a href="#travel">Destinations</a></div>
+      <div class="book"><a href="#booking">Booking</a></div>
+      <div class="con"><a href="#">Contact</a></div>
+      <div class="pri"><a href="#">Pricing</a></div>
+      <div class="pol"><a href="#">Privacy Policy</a></div>
+      <div class="copy">Copyright 2014-2018 <span>Rhea - Travel Around The World</span></div>
+    </div>
+    <div class="footerTwo">
+      <div class="youtube"><a href="#"><img src="img/youtube.png" alt=""></a></div>
+      <div class="facebook"><a href="#"><img src="img/facebook.png" alt=""></a></div>
+      <div class="twitter"><a href="#"><img src="img/twitter.png" alt=""></a></div>
+      <div class="mail"><a href="#"><img src="img/mail.png" alt=""></a></div>
+    </div>
+
+
+
+
+  </footer>
 </body>
 
 </html>
