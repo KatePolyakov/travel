@@ -240,7 +240,7 @@ width: 741px;
 }
 
 .smallVideo li {
-  display: block ruby;
+  display: flex;
   margin: 0px 0px 10px 0px;
 }
 .smallVideo li:hover{
@@ -255,7 +255,9 @@ width: 741px;
 .smallVideo p{
   margin: 0px;
 }
-
+.smallVideo h3{
+  padding-top: 10px;
+}
 .smallVideo p{
   text-align: left;
 }
@@ -395,7 +397,7 @@ width: 741px;
     margin-top: 150px;
     background: url('./img/booking.png');
     background-size: cover;
-    height: 100vh; 
+  
   }
   .bookingGrid{
     display: grid;
