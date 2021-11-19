@@ -187,6 +187,9 @@ width: 100%;
 .ocean {
   margin: 70px 20px 0px 0px;
 }
+.oceanMobile img{
+  display: none;
+}
 .nepal {
   margin: 0px 20px;
 }
@@ -229,6 +232,25 @@ width: 100%;
 
 .video{
   margin: 175px 141px;
+}
+.travel-first img,
+.travel-five img{
+  width: 100%;
+  max-width: 146px;
+  height: auto;
+}
+.travel-second img,
+.travel-third img,
+.travel-fourth img{
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+}
+
+.bigVideo img {
+  width: 100%;
+  max-width: 792px;
+  height: auto;
 }
 .smallVideo{
   overflow: auto;
@@ -560,29 +582,98 @@ width: 100%;
 } 
 
 /* mediaquerries */
+@media (max-width: 1508px){
+  .explore {
+    margin-top: 20px;
+  }
+
+
+}
+
 @media (max-width: 1425px){
   .home2{
     margin-right: 2%;
-  }
-  .explore {
-    margin-top: 20px;
   }
   .amazing h2{
     font-size: 26px;
   }
 }
 
+@media (max-width: 1282px){
+  .container-home{
+    flex-wrap: wrap-reverse;
+  }
+  .amazing,
+  .video{
+    text-align: center;
+  }
+  .video{
+    margin: 175px 0;
+  }
+  .amazing h2,
+  .amazing p,
+  .video h2,
+  .video p{
+    margin-left: 141px;
+    margin-right: 141px;
+  }
+
+
+  .amazing h2{
+    font-size: 34px;
+  } 
+  .home2 hr {
+    margin-left: auto;
+  }
+
+  .ocean,
+  .nepal{
+    margin: 20px 20px 0 20px;
+  }
+  .oceanDesktop img{
+    display: none;
+  }
+  .oceanMobile img{
+    display:block;
+  }
+  .container-home div:nth-child(2){
+    justify-content: flex-start;
+  }
+ 
+  .travel p, 
+  .experiences p,
+  .smallVideo p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .smallVideo p,
+  .smallVideo h3 {
+    text-align: left;
+  }
+}
+
 
 
 @media (max-width: 1154px){
+  .amazing h2,
+  .amazing p,
+  .video h2,
+  .video p{
+    margin-left: 0;
+    margin-right: 0;
+  }
   header, 
   .home {
-    margin: 2%;
+    margin: 2% 0 2% 2%;
   }
-  /* .container-home{
-    flex: 50%;
-    max-width: 50%;
-  } */
+  
+  .amazing,
+  .video,
+  .experiences,
+  .travel,
+  footer {
+    margin: 15% 0 0% 2%;
+  }
 }
 
 @media (max-width: 1104px){
@@ -597,6 +688,7 @@ width: 100%;
     margin-top: 20px;
   }
 }
+
 @media (max-width: 909px){
   .menu ul,
   .homeTitle {
@@ -609,15 +701,41 @@ width: 100%;
   .logo {
     text-align: center;
   }
+  .smallVideo li {
+    display: table-cell;
+  }
+  .smallVideo {
+    overflow: scroll;
+    height: auto;
+  }
+  .smallVideo div {
+    margin-left: 14.5px;
+  }
+  .smallVideo li:first-child img,
+  .smallVideo li:first-child div{
+    margin-left: 0;
+  }
+  .smallVideo li:last-child img{
+    margin-right: 0;
+  }
+  
 }
 @media (max-width: 611px){
   .menu li {
     padding: 10px;
+  }
+  .amazing,
+  .video{
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 @media (max-width: 517px){
   .menu li {
     padding: 10px 20px;
     display: inline-block;
+  }
+  .menu ul{
+   text-align: justify;
   }
 }
