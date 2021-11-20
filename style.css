@@ -482,14 +482,16 @@ width: 100%;
   #start {
     padding: 18px 58.1px;
 }
-.footerOne{
+.footerOne {
   display: grid;
   grid-template-areas: "h i j k l m n"
-                      "o o o o o o o";
-  margin: 82px 414px 25px 484px;
+                       "o o o o o o o";
+  margin: 82px 0 25px 0;
   font-size: 14px;
   grid-row-gap: 30px;
   font-family: 'Nunito', sans-serif;
+  justify-content: center;
+  grid-column-gap: 25px;
 }
 .ho{
   grid-area: h;
@@ -529,7 +531,8 @@ width: 100%;
 .footerTwo{
   display: grid;
   grid-template-areas: "a b c d";
-  padding: 0 582px 0 652px;
+  justify-content: center;
+  grid-column-gap: 25px;
 }
 
 .youtube{
@@ -597,6 +600,7 @@ width: 100%;
   .amazing h2{
     font-size: 26px;
   }
+
 }
 
 @media (max-width: 1282px){
@@ -651,7 +655,19 @@ width: 100%;
     text-align: left;
   }
 }
-
+@media (max-width:1188px) {
+  .bookingGrid{
+    display: grid;
+    grid-template-areas: "a a"
+                        "b b"
+                        "c d"
+                        "e f";
+    padding:154px 154px;;
+    justify-items: center;
+    align-self: center;
+    grid-row-gap: 25px;
+  }
+}
 
 
 @media (max-width: 1154px){
@@ -720,6 +736,21 @@ width: 100%;
   }
   
 }
+@media (max-width: 795px){
+  .bookingGrid{
+    display: grid;
+    grid-template-areas: "a"
+                        "b"
+                        "c"
+                        "d"
+                        "e"
+                        "f";
+    padding: 100px 75px;
+    justify-items: center;
+    align-self: center;
+    grid-row-gap: 25px;
+  }
+}
 @media (max-width: 611px){
   .menu li {
     padding: 10px;
@@ -729,6 +760,19 @@ width: 100%;
     margin-left: 5%;
     margin-right: 5%;
   }
+  .footerOne {
+    grid-template-areas: "h"
+                          "i"
+                          "j"
+                          "k"
+                          "l"
+                          "m"
+                          "n"
+                          "o";
+    text-align: center;
+    grid-row-gap: 10px;
+    margin-top: 25px;
+  }
 }
 @media (max-width: 517px){
   .menu li {
@@ -737,5 +781,8 @@ width: 100%;
   }
   .menu ul{
    text-align: justify;
+  }
+  .bookingGrid{
+    padding: 100px 25px;
   }
 }
